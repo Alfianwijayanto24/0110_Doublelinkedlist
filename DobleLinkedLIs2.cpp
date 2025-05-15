@@ -50,6 +50,10 @@ class DobleLinkedList
          START->prev = newNode;
          //step 6: newNode.prev = NULL
          newNode->prev = NULL;
+         // STEP 7: START =newNode
+         START = newNode;
+         return;
+
 
 
          }
