@@ -175,4 +175,24 @@ class DobleLinkedList
         }
         
     }
+
+    void searchData()
+    {
+        if (START == NULL)
+        {
+            cout << "\nList is empty" << endl;
+        }
+        int rollNo;
+        cout << "\nEnter the roll number to search: ";
+        cin >> rollNo;
+
+        Node *current = START;
+
+        // Step 1a: Traverse to fide matching roll number
+        while (current != NULL && current->noMhs != rollNo)
+        {
+            current = current->next;
+        }
+        
+    }
 };
