@@ -71,7 +71,12 @@ class DobleLinkedList
          }
          // step 9: Insert between current and current->next
          newNode->next = current->next;// stap 9a: newNode.next = current.next
-         newNode->prev = current;// stape 9b: newNode.next 
+         newNode->prev = current;// stape 9b: newNode.preve = curent
+
+         // insert last node
+         if(current->next != NULL)
+         current->next->prev = newNode; // step 9c: current.next.prev = newNode
+         current->next = newNode; //step 9d: current.next = newNode
 
     }
 };
