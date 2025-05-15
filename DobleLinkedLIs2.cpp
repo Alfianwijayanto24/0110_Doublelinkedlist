@@ -192,6 +192,19 @@ class DobleLinkedList
         while (current != NULL && current->noMhs != rollNo)
             current = current->next;
 
+            // Step 2b: Output result
+            if (current == NULL)
+            {
+                cout << "Record not found\n";
+
+            }
+            else
+            {
+                cout << " Record found\n";
+                cout << "Roll Number :" << current->noMhs<< endl;
+            }
+            
+
         
         
     }
