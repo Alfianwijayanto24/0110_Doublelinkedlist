@@ -33,6 +33,9 @@ class DobleLinkedList
 
         //Setep 2: Assig value to the data fields
         newNode->noMhs = nim;
-        
+
+        //Setape 3: Insert at beginning if list is empaty or nim is dmallest
+         (START == NULL || nim <= START ->noMhs)
+
     }
 }
