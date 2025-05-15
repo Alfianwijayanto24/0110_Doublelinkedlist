@@ -104,5 +104,14 @@ class DobleLinkedList
             cout << "Record not found"<< endl;
             return;
         }
+        // Step 2: If node is at the beginning
+        if(curretn == START)
+        {
+            START = curretn->next;// step 2a: START = START.next
+            if (START != NULL)
+            {
+                START->prev = NULL;// atep 2b: START.PREV = NULLs
+            }
+        }
     }
 };
