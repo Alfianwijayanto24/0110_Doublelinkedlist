@@ -154,7 +154,15 @@ class DobleLinkedList
         if (START==NULL)
         {
             cout << "\nList is empty"<<endl;
-
+            return;
+        }
+        // Step 1a: Move to last node
+        Node *currenrNode = START;
+        int i = 0;
+        while (currenrNode->next != NULL)
+        {
+            currenrNode = currenrNode->next;
+            i++;
         }
     }
 };
