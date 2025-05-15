@@ -48,6 +48,8 @@ class DobleLinkedList
          //Setape 5: Setart.prev = newNode (if START exists)
          if (START != NULL)
          START->prev = newNode;
+         //step 6: newNode.prev = NULL
+         newNode->prev = NULL;
 
 
          }
