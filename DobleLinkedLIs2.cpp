@@ -44,6 +44,12 @@ class DobleLinkedList
          }
          //Stepe 4: newNode.next = START
          newNode->next = START;
+
+         //Setape 5: Setart.prev = newNode (if START exists)
+         if (START != NULL)
+         START->prev = newNode;
+
+
          }
 
     }
