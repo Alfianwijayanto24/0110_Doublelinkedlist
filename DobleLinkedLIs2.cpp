@@ -164,5 +164,12 @@ class DobleLinkedList
             currenrNode = currenrNode->next;
             i++;
         }
+        // Step 2b: Traverst backward
+        cout << "\nRecords in descending order of roll number are:\n";
+        while (currenrNode !=NULL)
+        {
+            cout << i + 1<< ". "<< currenrNode->noMhs<<" "<<endl;
+        }
+        
     }
 };
