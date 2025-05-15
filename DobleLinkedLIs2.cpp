@@ -48,8 +48,10 @@ class DobleLinkedList
          //Setape 5: Setart.prev = newNode (if START exists)
          if (START != NULL)
          START->prev = newNode;
+
          //step 6: newNode.prev = NULL
          newNode->prev = NULL;
+
          // STEP 7: START =newNode
          START = newNode;
          return;
@@ -78,5 +80,29 @@ class DobleLinkedList
          current->next->prev = newNode; // step 9c: current.next.prev = newNode
          current->next = newNode; //step 9d: current.next = newNode
 
+    }
+    void hapus()
+    {
+        if(START == NULL)
+        {
+            cout << "\nList is empty"<< endl;
+            return;
+        }
+        cout << "\nMasukan nim yg akan didelete";
+        int rollNo;
+        cin >> rollNo;
+
+        Node *curretn = START;
+
+        // Stape 1: Tranvers the list to find the node
+        while(curretn != NULL && curretn->noMhs != rollNo)
+        {
+            curretn = curretn->next;
+        }
+        if (curretn == NULL)
+        {
+            cout << "Record not found"<< endl;
+            return;
+        }
     }
 };
