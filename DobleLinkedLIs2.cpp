@@ -67,7 +67,11 @@ class DobleLinkedList
          if (current->next != NULL && nim == current->next->noMhs)
          {
             cout << "\nDuplicate roll numbers not allowed"<< endl;
+            return;
          }
+         // step 9: Insert between current and current->next
+         newNode->next = current->next;// stap 9a: newNode.next = current.next
+         newNode->prev = current;// stape 9b: newNode.next 
 
     }
 };
