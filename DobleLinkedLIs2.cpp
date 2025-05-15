@@ -113,5 +113,17 @@ class DobleLinkedList
                 START->prev = NULL;// atep 2b: START.PREV = NULLs
             }
         }
+        else 
+        {
+            // stape 3. Link previos node to next of current
+            curretn->prev->next = curretn->next;
+
+            // stepe 4. If current is not the last node
+            if(curretn->next != NULL)
+            curretn->next->prev = curretn->prev;
+        }
+        // stape 5: Detle the node 
+        delete curretn;
+        cout << " Record with roll number"<< rollNo<<"deleted"<<endl;
     }
 };
